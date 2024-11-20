@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transport Network</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="">
+	<script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index2.html">Home</a></li>
+				<li><a href="index3.html">Services</a></li>
+				<li><a href="">QR Code</a></li>
+				<li><a href="index4.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h1>Welcome to Transport Network</h1>
+			<p>Book your ride now!</p>
+			<button class="book-now">Book Now</button>
+            <button class="quick-ride"
+			id="quick-ride-btn">Quick Ride</button>
+		</section>
+	</main>
+	<!-- Book a Ride Form -->
+<div id="book-ride-form" style="display: none;">
+	<center>
+	<h2>Book a Ride</h2>
+	<form>
+	  <label>Pickup Location:</label>
+	  <input type="text" id="pickup-location" />
+	  <br />
+	  <label>Dropoff Location:</label>
+	  <input type="text" id="dropoff-location" />
+	  <br />
+	  <label>Date and Time:</label>
+	  <input type="datetime-local" id="date-time" />
+	  <br />
+	  <label>Number of Passengers:</label>
+	  <input type="number" id="num-passengers" />
+	  <br />
+	  <button id="book-ride-submit">Book Ride</button>
+	</form>
+	<div id="scanner-container"></div>
+</center>
+  </div>
+  
+	<footer>
+		<p>&copy; 2024 Transport Network</p>
+	</footer>
+</body>
+<script src="script.js"></script>
+
+</html>

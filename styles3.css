@@ -1,0 +1,147 @@
+.service-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+  
+  .service {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .service h2 {
+    color: #333;
+  }
+  
+  .service p {
+    margin-bottom: 20px;
+  }
+  
+  .service button {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .service button:hover {
+    background-color: #ff9900;
+    color: white;
+  }
+  
+  /* Add some space between services */
+  .service + .service {
+    margin-top: 20px;
+  }
+
+  #book-btn {
+	background-color: #ffc107;
+	color: #333;
+	border: none;
+	padding: 1em 2em;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#book-btn:hover {
+	background-color: #ff9900;
+    color: white;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+  
+/* Add these styles to make your website responsive */
+
+/* Use a flexible grid system */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 10px;
+}
+
+/* Make the nav menu responsive */
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+/* Make the main content area responsive */
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+/* Make the sections responsive */
+section {
+	background-color: #f9f9f9;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add media queries to apply different styles for different screen sizes */
+@media (max-width: 600px) {
+	/* Styles for small screens (mobile devices) */
+	nav {
+		flex-direction: column;
+	}
+	nav li {
+		margin-right: 0;
+	}
+	main {
+		padding: 10px;
+	}
+	section {
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+	/* Styles for medium screens (tablets) */
+	main {
+		padding: 20px;
+	}
+	section {
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 1025px) {
+	/* Styles for large screens (laptops and desktops) */
+	main {
+		padding: 30px;
+	}
+	section {
+		padding: 30px;
+		margin-bottom: 30px;
+	}
+}

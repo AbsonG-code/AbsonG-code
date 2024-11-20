@@ -1,0 +1,346 @@
+body {
+	background-color: #f5f5f5;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#register-btn, #login-btn {
+	background-color: #ffc107;
+	color: #333;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#register-btn:hover, #login-btn:hover {
+	background-color: #ff9900;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+}
+
+h1 {
+	color: #333;
+}
+
+section {
+	background-color: #fff;
+	padding: 1em;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+	color: #333;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+button {
+	background-color: #ffc107;
+	color: #333;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #ff9900;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1em;
+	clear: both;
+}
+#login-form, #register-form {
+	position: absolute;
+	top: 50%;	
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+	display: none; /* Hide the forms initially */
+  }
+  
+  #login-form input, #register-form input {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+  }
+  
+  #login-form button, #register-form button {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  #login-form button:hover, #register-form button:hover {
+	background-color: #3e8e41;
+  }
+
+  #close-login-btn, #close-register-btn{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	cursor: pointer;
+  }
+
+  #close-login-btn:hover,
+#close-register-btn:hover{
+	color: red;
+}
+.hero {
+	background-color: #f9f9f9;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px; /* Add margin top to align with the nav bar */
+  }
+  
+  .hero-content {
+	margin-bottom: 20px;
+  }
+  
+  .hero-content h1 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+	font-size: 18px;
+	margin-bottom: 20px;
+  }
+  
+  #plan-trip-btn {
+	background-color: #ff9900;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .hero-image {
+	margin-top: 20px;
+  }
+  
+  .hero-image img {
+	width: 100%;
+	height: 700px;
+	object-fit: contains;
+	border-radius: 10px;
+  }
+
+  .search-bar{
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+
+  #search-input{
+	width: 70%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
+
+  #search-btn{
+	width: 20%;
+	padding: 10px;
+	background-color: #ff9900;
+	color: #fff;
+	border: none;
+	cursor:pointer;  }
+
+	#search-btn:hover{
+		background-color: #3e8e41;
+	}
+
+	  
+	  /* Add separate styles for each option */
+	  .bus-option {
+		background-color: #f9f9f9;
+		border-color: #ccc;
+	  }
+	  
+	  .car-option {
+		background-color: #fff;
+		border-color: #aaa;
+	  }
+	  
+	  .motorcycle-option {
+		background-color: #f9f9f9;
+		border-color: #ccc;
+	  }
+	  
+	  .tricycle-option {
+		background-color: #fff;
+		border-color: #ccc;
+	  }
+
+	  .schedules {
+		background-color: #f9f9f9;
+		padding: 20px;
+	  }
+	  
+	  .schedule-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	  }
+	  
+	  .schedule {
+		margin: 20px;
+		padding: 20px;
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		width: calc(33.333% - 20px);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	  }
+	  
+	  .schedule h3 {
+		font-size: 18px;
+		margin-bottom: 10px;
+	  }
+	  
+	  .schedule p {
+		font-size: 16px;
+		color: #666;
+	  }
+
+	  /* Add these styles to make your website responsive */
+
+/* Use a flexible grid system */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 10px;
+}
+
+/* Make the nav menu responsive */
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+/* Make the main content area responsive */
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+/* Make the sections responsive */
+section {
+	background-color: #f9f9f9;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add media queries to apply different styles for different screen sizes */
+@media (max-width: 600px) {
+	/* Styles for small screens (mobile devices) */
+	nav {
+		flex-direction: column;
+	}
+	nav li {
+		margin-right: 0;
+	}
+	main {
+		padding: 10px;
+	}
+	section {
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+	/* Styles for medium screens (tablets) */
+	main {
+		padding: 20px;
+	}
+	section {
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 1025px) {
+	/* Styles for large screens (laptops and desktops) */
+	main {
+		padding: 30px;
+	}
+	section {
+		padding: 30px;
+		margin-bottom: 30px;
+	}
+}
+
+	  
+	  
+  
+
+  

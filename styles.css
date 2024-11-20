@@ -1,0 +1,219 @@
+body {
+	background-color: #f0f0f0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+header ul :hover {
+    background:  #ffc107;
+    color:  #333;
+    transition: all 0.4s ease;
+    padding: 1em 1em;
+	border-radius: 3px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+}
+
+section {
+	background-color: #fff;
+	padding: 1em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	color: #333;
+}
+
+.book-now {
+	background-color: #ffc107;
+	color: #fff;
+	border: none;
+	padding: 1em 2em;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.book-now:hover {
+	background-color: #ff9900;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+	clear: both;
+}
+
+.quick-ride {
+	background-color: #ffc107;
+	color: #fff;
+	border: none;
+	padding: 1em 2em;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.quick-ride:hover {
+	background-color: #ff9900;
+}
+
+#book-ride-form {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+}
+  
+  #book-ride-form h2 {
+	color: #333;
+  }
+  
+  #book-ride-form label {
+	display: block;
+	margin-bottom: 10px;
+  }
+  
+  #book-ride-form input[type="text"],
+  #book-ride-form input[type="datetime-local"],
+  #book-ride-form input[type="number"] {
+	width: 60%;
+	padding: 5px;
+	margin-bottom: 1%;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+  }
+  
+  #book-ride-submit {
+	background-color: #ffc107;
+	color: #333;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  #book-ride-submit:hover {
+	background-color: #ff9900;
+  }
+
+  
+  /* Add these styles to make your website responsive */
+
+/* Use a flexible grid system */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 10px;
+}
+
+/* Make the nav menu responsive */
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+/* Make the main content area responsive */
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+/* Make the sections responsive */
+section {
+	background-color: #f9f9f9;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add media queries to apply different styles for different screen sizes */
+@media (max-width: 600px) {
+	/* Styles for small screens (mobile devices) */
+	nav {
+		flex-direction: column;
+	}
+	nav li {
+		margin-right: 0;
+	}
+	main {
+		padding: 10px;
+	}
+	section {
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+	/* Styles for medium screens (tablets) */
+	main {
+		padding: 20px;
+	}
+	section {
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 1025px) {
+	/* Styles for large screens (laptops and desktops) */
+	main {
+		padding: 30px;
+	}
+	section {
+		padding: 30px;
+		margin-bottom: 30px;
+	}
+}
+
+  
+
+
+
+
